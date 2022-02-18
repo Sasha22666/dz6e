@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Звезды</title>
+</head>
+
+<body>
+    <style>
+        .ocenka {
+            float: left
+        }
+
+        .star {
+            display: inline-block
+        }
+
+        .ocenka .star {
+            content: url(star0.png)
+        }
+
+        .ocenka:hover .star {
+            content: url(star1.png)
+        }
+
+        .ocenka .star:hover~.star {
+            content: url(star0.png)
+        }
+    </style>
+    <div class="ocenka">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        
+    </div>
+</body>
+
+</html>
